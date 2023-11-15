@@ -55,6 +55,9 @@
 body {
   font-family: AudiType-WideNormal;
 }
+a{
+  text-decoration: none;
+}
 
 /* NAVBAR */
 
@@ -235,6 +238,7 @@ section.container > h2 {
 
 .zoom-card img {
   width: 100%;
+  cursor: pointer;
   height: auto;
   object-fit: cover;
   transition: all 1s;
@@ -301,4 +305,55 @@ section.container > h2 {
 .highlight p{
   margin:0;
   margin-bottom: 5px;
+}
+
+/* footer */
+footer a{
+  color: antiquewhite;
+}
+footer .copyright{
+  font-size: 0.8rem;
+}
+
+footer .menu{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  
+}
+footer .menu a{
+  flex: 200px 0 1;
+}
+@media(max-width: 576px){
+  footer .menu a{
+    flex-basis: 150px;
+  }
+}
+@media(max-width: 1200px){
+  footer .menu a{
+    flex-basis: auto;
+  }
+}
+
+footer .accordion-button{
+  font-size: 1.5rem;
+}
+
+@media(min-width: 768px){
+  footer .accordion-button::after{
+    background-image: none;
+  }
+
+  footer .accordion-collapse{
+    display: block !important;
+  }
+
+  footer .accordion-item{
+    border:0 !important;
+  }
+
+  footer .accordion{
+    display: flex !important;
+    justify-content: space-between;
+  }
 }
